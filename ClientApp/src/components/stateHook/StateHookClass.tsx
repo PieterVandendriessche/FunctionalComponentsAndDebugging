@@ -14,10 +14,10 @@ export class StateHookClass extends React.Component<{}, IStateHookClass> {
             cookiesConsumed: 0
         };
 
-        this.AddCookie = this.AddCookie.bind(this);
+        this.addCookie = this.addCookie.bind(this);
     }
 
-    public AddCookie() {
+    public addCookie() {
         const currentAmount = this.state.cookiesConsumed;
         this.setState({
             cookiesConsumed: currentAmount + 1
@@ -34,7 +34,7 @@ export class StateHookClass extends React.Component<{}, IStateHookClass> {
                 }
 
                 <p>Cookies eaten 🍪: <b>{this.state.cookiesConsumed}</b></p>
-                <button onClick={this.AddCookie}>Give cookie</button>
+                <button onClick={this.addCookie}>Give cookie</button>
             </div>
         );
     }

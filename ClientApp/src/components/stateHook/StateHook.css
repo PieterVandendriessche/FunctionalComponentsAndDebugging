@@ -15,7 +15,7 @@
 .tear {
     position: absolute;
     left: 51%;
-    top: 70px;
+    top: 150px;
     animation-name: falling-tear;
     animation-duration: 3s;
     animation-iteration-count: infinite;
@@ -23,11 +23,11 @@
 
 @keyframes falling-tear {
     0% {
-        top: 70px;
+        top: 150px;
     }
 
     5% {
-        top: 90px;
+        top: 170px;
     }
 
     100% {

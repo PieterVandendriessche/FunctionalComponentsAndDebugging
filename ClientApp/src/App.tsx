@@ -1,6 +1,8 @@
 import * as React from "react";
 
 import "./App.css";
+import { CustomHook } from "./components/customHook/CustomHook";
+import { DevtoolContainer } from "./components/devtools/DevtoolContainer";
 import { EffectHookClass } from "./components/effectHook/EffectHookClass";
 import { EffectHookFunction } from "./components/effectHook/EffectHookFunction";
 import { RefHook } from "./components/refHook/RefHook";
@@ -10,11 +12,14 @@ import { StateHookFunction } from "./components/stateHook/StateHookFunction";
 const App: React.FC = () => {
   return (
     <>
-      {/*<StateHookClass />*/}
+      {/*<StateHookClass />8?}
       { /*<StateHookFunction /> */}
       {/*<EffectHookClass />*/}
       {/*<EffectHookFunction />*/}
-      {<RefHook />}
+      {/*<RefHook />*/}
+      {/*<CustomHook />*/}
+
+      {<DevtoolContainer />}
     </>
   )
 };
